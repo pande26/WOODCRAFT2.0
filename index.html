@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Woodcraft Creations</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <!-- Header section containing navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <!-- Logo and Company name -->
+                <div class="logo-container">
+                    <img src="Images/Logo.jpg" alt="Woodcraft Creations Logo" width="100" height="100">
+                    <h1>WOODCRAFT CREATIONS</h1>
+                </div>
+
+                <!-- Navigation menu -->
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Custom Woodcraft Excellence</h1>
+                <h2>Inspired By Nature, Perfected By Hand</h2>
+                <a href="contact.html" class="cta-button">Get a Free Quote</a>
+            </div>
+        </section>
+        
+        <!-- Features section -->
+        <section class="features">
+            <div class="container">
+                <div class="feature">
+                    <h3>Custom Furniture</h3>
+                    <p>Handcrafted pieces tailored to your unique style and space requirements. Each piece is made with attention to detail and quality materials.</p>
+                </div>
+                <div class="feature">
+                    <h3>Wood Restoration</h3>
+                    <p>Breathing new life into cherished wooden heirlooms. Our restoration services preserve the history while enhancing durability.</p>
+                </div>
+                <div class="feature">
+                    <h3>Architectural Elements</h3>
+                    <p>Custom doors, trim, and millwork that add character and warmth to your home. Precision craftsmanship for lasting beauty.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonial">
+                    <p>"Woodcraft Creations transformed my dining room with a beautiful custom table. The craftsmanship is exceptional!"</p>
+                    <span>- Lufuno Ramasuvha</span>
+                </div>
+                <div class="testimonial">
+                    <p>"They restored my grandfather's antique desk perfectly. It looks even better than I remember from my childhood."</p>
+                    <span>- Xichavo Maluleke</span>
+                </div>
+            </div>
+        </section>
+    </main>   
+
+    <!-- Footer section with company info and copyright -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company description -->
+                <div class="footer-section">
+                    <h3>WoodCraft Creations</h3>
+                    <p>Crafting timeless wooden pieces with passion and precision since 2015. Each creation tells a story of artistry and dedication.</p>
+                </div>
+                    
+                <!-- Contact information -->
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Cape Town City Centre, Cape Town, 1234<br>
+                    Phone: +27 60 400 3308<br>
+                    Email: info@woodcraftcreations.co.za</p>
+                </div>
+                
+                <!-- Business Hours -->
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 10:00 AM - 4:00 PM<br>
+                    Sunday: Closed</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright notice -->
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 WoodCraft Creations. All rights reserved. | ST10473181</p>
+            </div>
+        </div>      
+    </footer>
+    
+    <script>
+        // Mobile menu functionality
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>    
+</html>

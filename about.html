@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <!-- Responsive viewport setting -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Woodcraft Creations</title>
+    <link rel="stylesheet" href="CSS/about.css">
+</head>
+<body>
+    <!-- Header section containing navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <!-- Logo and company name -->
+                <div class="logo-container">
+                    <img src="Images/Logo.jpg" alt="Woodcraft Creations Logo" width="100" height="100">
+                    <h1>WOODCRAFT CREATIONS</h1>
+                </div>
+                <!-- Navigation menu -->
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main content section -->
+    <main class="container">
+        <!-- Company introduction -->
+        <section class="about-header">
+            <h2>About WoodCraft Creations</h2>
+            <p>Founded in 2015, WoodCraft Creations is a locally owned carpentry business specializing in custom furniture, cabinetry, and wooden décor. We take pride in delivering high-quality craftsmanship and personalized designs to both residential and commercial clients.</p>
+        </section>
+        
+        <!-- Mission and Vision -->
+        <section class="mission-vision">
+            <div class="card">
+                <h3>Our Mission</h3>
+                <p>To transform raw materials into functional art by creating timeless, high-quality wooden pieces that enhance our clients' living and working spaces.</p>
+            </div>
+            <div class="card">
+                <h3>Our Vision</h3>
+                <p>To become the premier carpentry service in the region, recognised for excellence in sustainable craftsmanship, innovative design, and unparalleled customer satisfaction.</p>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section class="team-section">
+            <h3>Meet Our Team</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="Images/Pande.jpg" alt="Pandelani Munenyiwa - Master Craftsman & Founder">
+                    </div>
+                    <div class="member-info">
+                        <h4>Pandelani Munenyiwa</h4>
+                        <p>Master Craftsman & Founder</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="Images/Angel.jpg" alt="Angel Mohlahlo - Design Specialist">
+                    </div>
+                    <div class="member-info">
+                        <h4>Angel Mohlahlo</h4>
+                        <p>Design Specialist</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-img">
+                        <img src="Images/Kamogelo.jpg" alt="Kamogelo Rikhotso - Project Manager">
+                    </div>
+                    <div class="member-info">
+                        <h4>Kamogelo Rikhotso</h4>
+                        <p>Project Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Values Section -->
+        <section class="values-section">
+            <h3>Our Values</h3>
+            <div class="values-grid">
+                <div class="value-item">
+                    <i>🔨</i>
+                    <h4>Craftsmanship</h4>
+                    <p>Attention to detail in every piece we create</p>
+                </div>
+                <div class="value-item">
+                    <i>🌱</i>
+                    <h4>Sustainability</h4>
+                    <p>Using ethically sourced, eco-friendly materials</p>
+                </div>
+                <div class="value-item">
+                    <i>💎</i>
+                    <h4>Quality</h4>
+                    <p>Never compromising on materials or workmanship</p>
+                </div>
+                <div class="value-item">
+                    <i>🤝</i>
+                    <h4>Collaboration</h4>
+                    <p>Working closely with clients to realize their vision</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer section with company info and copyright -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company description -->
+                <div class="footer-section">
+                    <h3>WoodCraft Creations</h3>
+                    <p>Crafting timeless wooden pieces with passion and precision since 2015.</p>
+                </div>
+                
+                <!-- Contact information -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Cape Town City Centre, Cape Town, 1234<br>
+                    Phone: +27 60 400 3308<br>
+                    Email: info@woodcraftcreations.co.za</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright notice -->
+            <div class="copyright">
+                <p>&copy; 2025 WoodCraft Creations. All Rights Reserved. | ST10473181</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu functionality
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
