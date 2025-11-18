@@ -1,5 +1,3 @@
-/* services.css - External CSS for Woodcraft Creations Services Page */
-
 /* Base styles and reset */
 * {
     margin: 0;
@@ -122,9 +120,15 @@ main {
 .services-header {
     text-align: center;
     margin-bottom: 50px;
+    animation: fadeIn 1s ease-out;
 }
 
-.services-header h2 {
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.services-header h1 {
     font-size: 2.8rem;
     color: #4E342E;
     margin-bottom: 20px;
@@ -132,7 +136,7 @@ main {
     display: inline-block;
 }
 
-.services-header h2::after {
+.services-header h1::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -150,6 +154,42 @@ main {
     line-height: 1.8;
 }
 
+/* Service Filter */
+.service-filter {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.service-filter h2 {
+    color: #4E342E;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-btn {
+    background: rgba(255, 250, 245, 0.8);
+    border: 2px solid #8D6E63;
+    color: #5D4037;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #8D6E63;
+    color: white;
+    transform: translateY(-2px);
+}
+
 /* Services grid */
 .services-grid {
     display: grid;
@@ -163,8 +203,18 @@ main {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
     border: 1px solid rgba(141, 110, 99, 0.1);
+    opacity: 1;
+}
+
+.service-card.hidden {
+    display: none;
+}
+
+.service-card.fade-out {
+    opacity: 0;
+    transform: scale(0.9);
 }
 
 .service-card:hover {
@@ -179,6 +229,7 @@ main {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 
 .service-img img {
@@ -190,6 +241,30 @@ main {
 
 .service-card:hover .service-img img {
     transform: scale(1.05);
+}
+
+.service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(93, 64, 55, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .service-overlay {
+    opacity: 1;
+}
+
+.service-overlay span {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .service-info {
@@ -240,13 +315,98 @@ main {
     font-weight: bold;
 }
 
-/* Additional Services Section */
-.additional-services {
+.service-details-btn {
+    background: #8D6E63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.service-details-btn:hover {
+    background: #5D4037;
+}
+
+/* Accordion Styles */
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background: rgba(255, 250, 245, 0.8);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: rgba(141, 110, 99, 0.1);
+}
+
+.accordion-header h3 {
+    color: #5D4037;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.accordion-header i {
+    color: #8D6E63;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-header i {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion-item.active .accordion-content {
+    padding: 0 20px 20px;
+    max-height: 500px;
+}
+
+.accordion-content p {
+    margin-bottom: 15px;
+}
+
+.accordion-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.accordion-content li {
+    margin-bottom: 8px;
+    color: #3E2723;
+}
+
+/* Process Section */
+.process-section {
     margin: 80px 0;
     text-align: center;
 }
 
-.additional-services h3 {
+.process-section h2 {
     font-size: 2.2rem;
     color: #4E342E;
     margin-bottom: 40px;
@@ -254,7 +414,7 @@ main {
     display: inline-block;
 }
 
-.additional-services h3::after {
+.process-section h2::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -265,34 +425,58 @@ main {
     background-color: #8D6E63;
 }
 
-.services-list {
+.process-steps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 50px;
 }
 
-.service-item {
+.process-step {
     background: rgba(255, 250, 245, 0.8);
-    padding: 30px;
+    padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
-    border-left: 4px solid #8D6E63;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
 }
 
-.service-item:hover {
+.process-step.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.process-step:hover {
     transform: translateY(-5px);
 }
 
-.service-item h4 {
-    color: #5D4037;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    font-weight: 600;
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: #8D6E63;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.service-item p {
+.process-step h3 {
+    color: #5D4037;
+    margin: 15px 0 10px;
+    font-size: 1.3rem;
+}
+
+.process-step p {
     color: #3E2723;
     line-height: 1.6;
 }
@@ -308,7 +492,7 @@ main {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.cta-section h3 {
+.cta-section h2 {
     font-size: 2.2rem;
     margin-bottom: 20px;
     font-weight: 600;
@@ -341,6 +525,76 @@ main {
     background: linear-gradient(135deg, #D7CCC8, #BCAAA4);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 0;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.3s ease;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #5D4037;
+    z-index: 10;
+}
+
+.close-modal:hover {
+    color: #8D6E63;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-service img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.modal-service h3 {
+    color: #5D4037;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.modal-service p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: #3E2723;
 }
 
 /* Footer styles */
@@ -447,7 +701,7 @@ footer {
         transform: rotate(45deg) translate(-5px, -6px);
     }
     
-    .services-header h2 {
+    .services-header h1 {
         font-size: 2.2rem;
     }
     
@@ -456,9 +710,18 @@ footer {
         gap: 30px;
     }
     
-    .services-list {
+    .filter-buttons {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .process-steps {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 40px;
     }
     
     .cta-section {
@@ -466,7 +729,7 @@ footer {
         margin: 60px 0;
     }
     
-    .cta-section h3 {
+    .cta-section h2 {
         font-size: 1.8rem;
     }
 }
@@ -482,7 +745,7 @@ footer {
         margin-bottom: 10px;
     }
     
-    .services-header h2 {
+    .services-header h1 {
         font-size: 1.8rem;
     }
     
@@ -494,12 +757,21 @@ footer {
         height: 200px;
     }
     
-    .service-item {
-        padding: 20px;
+    .accordion-header {
+        padding: 15px;
+    }
+    
+    .accordion-header h3 {
+        font-size: 1.1rem;
     }
     
     .cta-button {
         padding: 12px 30px;
         font-size: 1rem;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
     }
 }

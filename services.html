@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <!-- Responsive viewport setting -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Woodcraft Creations</title>
+    <title>Woodcraft Services - Custom Furniture, Cabinetry & Wood Restoration</title>
+    <meta name="description" content="Professional woodcraft services including custom furniture, cabinetry, wood restoration, and decorative pieces. Expert craftsmanship in Cape Town since 2015.">
+    <meta name="keywords" content="woodcraft services, custom furniture, cabinetry, wood restoration, Cape Town carpenters, custom woodwork">
     <link rel="stylesheet" href="CSS/services.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header section containing navigation -->
@@ -15,7 +19,7 @@
             <nav>
                 <!-- Logo and company name -->
                 <div class="logo-container">
-                    <img src="Images/Logo.jpg" alt="Woodcraft Creations Logo" width="100" height="100">
+                    <img src="Images/Logo.jpg" alt="Woodcraft Creations Logo - Custom Furniture & Woodworking Experts" width="100" height="100">
                     <h1>WOODCRAFT CREATIONS</h1>
                 </div>
                 <!-- Navigation menu -->
@@ -25,6 +29,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="enquiry.html">Enquire</a></li>
                 </ul>
                 <!-- Mobile menu button -->
                 <div class="mobile-menu-btn">
@@ -40,102 +45,196 @@
     <main class="container">
         <!-- Page heading -->
         <section class="services-header">
-            <h2>Our Services</h2>
-            <p>Discover our comprehensive range of woodcraft services, each delivered with the highest level of craftsmanship and attention to detail.</p>
+            <h1>Our Woodcraft Services</h1>
+            <p>Discover our comprehensive range of professional woodcraft services, each delivered with the highest level of craftsmanship and attention to detail by our skilled Cape Town artisans.</p>
+        </section>
+        
+        <!-- Service Filter -->
+        <section class="service-filter">
+            <h2>Browse Our Woodworking Services</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Services</button>
+                <button class="filter-btn" data-filter="furniture">Furniture</button>
+                <button class="filter-btn" data-filter="cabinetry">Cabinetry</button>
+                <button class="filter-btn" data-filter="decor">Décor</button>
+                <button class="filter-btn" data-filter="specialty">Specialty</button>
+            </div>
         </section>
         
         <!-- Services container -->
         <section class="services-grid">
             <!-- Custom Furniture service -->
-            <div class="service-card">
+            <div class="service-card" data-category="furniture">
                 <div class="service-img">
-                    <img src="Images/Sofa2.jpeg" alt="Custom Furniture" width="400" height="250">
+                    <img src="Images/Sofa2.jpeg" alt="Custom Furniture Design - Handcrafted Tables and Chairs" width="400" height="250">
+                    <div class="service-overlay">
+                        <span>View Furniture Details</span>
+                    </div>
                 </div>
                 <div class="service-info">
-                    <h3>Custom Furniture</h3>
-                    <p>Handcrafted tables, chairs, beds, and more tailored to your specific needs and style preferences. Each piece is uniquely designed to complement your space.</p>
+                    <h3>Custom Furniture Design</h3>
+                    <p>Handcrafted tables, chairs, beds, and more tailored to your specific needs and style preferences. Each piece is uniquely designed to complement your space with premium woodworking techniques.</p>
                     <div class="service-features">
-                        <h4>What we offer:</h4>
+                        <h4>Our Furniture Services Include:</h4>
                         <ul>
-                            <li><i>✓</i> Dining tables & chairs</li>
-                            <li><i>✓</i> Bedroom furniture</li>
-                            <li><i>✓</i> Living room pieces</li>
-                            <li><i>✓</i> Office furniture</li>
-                            <li><i>✓</i> Custom designs</li>
+                            <li><i class="fas fa-check"></i> Dining tables & chairs</li>
+                            <li><i class="fas fa-check"></i> Bedroom furniture sets</li>
+                            <li><i class="fas fa-check"></i> Living room pieces</li>
+                            <li><i class="fas fa-check"></i> Office furniture</li>
+                            <li><i class="fas fa-check"></i> Custom design consultation</li>
                         </ul>
                     </div>
+                    <button class="service-details-btn">More Furniture Details</button>
                 </div>
             </div>
             
             <!-- Cabinetry service -->
-            <div class="service-card">
+            <div class="service-card" data-category="cabinetry">
                 <div class="service-img">
-                    <img src="Images/K2.jpeg" alt="Kitchen cabinetry" width="400" height="250">
+                    <img src="Images/K2.jpeg" alt="Custom Kitchen Cabinetry - Storage Solutions" width="400" height="250">
+                    <div class="service-overlay">
+                        <span>View Cabinetry Details</span>
+                    </div>
                 </div>
                 <div class="service-info">
-                    <h3>Cabinetry</h3>
-                    <p>Custom kitchen cabinets, bathroom vanities, and storage solutions built to last. Precision craftsmanship for functional and beautiful storage solutions.</p>
+                    <h3>Custom Cabinetry Solutions</h3>
+                    <p>Custom kitchen cabinets, bathroom vanities, and storage solutions built to last. Precision craftsmanship for functional and beautiful storage solutions that maximize your space.</p>
                     <div class="service-features">
-                        <h4>What we offer:</h4>
+                        <h4>Our Cabinetry Services Include:</h4>
                         <ul>
-                            <li><i>✓</i> Kitchen cabinets</li>
-                            <li><i>✓</i> Bathroom vanities</li>
-                            <li><i>✓</i> Wardrobes & closets</li>
-                            <li><i>✓</i> Bookshelves</li>
-                            <li><i>✓</i> Entertainment units</li>
+                            <li><i class="fas fa-check"></i> Kitchen cabinets</li>
+                            <li><i class="fas fa-check"></i> Bathroom vanities</li>
+                            <li><i class="fas fa-check"></i> Wardrobes & closets</li>
+                            <li><i class="fas fa-check"></i> Bookshelves</li>
+                            <li><i class="fas fa-check"></i> Entertainment units</li>
                         </ul>
                     </div>
+                    <button class="service-details-btn">More Cabinetry Details</button>
                 </div>
             </div>
             
             <!-- Wooden Décor service -->
-            <div class="service-card">
+            <div class="service-card" data-category="decor">
                 <div class="service-img">
-                    <img src="Images/Shelve.jpeg" alt="Wooden Shelves" width="400" height="250">
+                    <img src="Images/Shelve.jpeg" alt="Wooden Décor - Custom Shelves and Wall Art" width="400" height="250">
+                    <div class="service-overlay">
+                        <span>View Décor Details</span>
+                    </div>
                 </div>
                 <div class="service-info">
-                    <h3>Wooden Décor</h3>
-                    <p>Beautiful wooden wall art, shelves, and decorative pieces to enhance your space. Add warmth and character to any room with our custom creations.</p>
+                    <h3>Wooden Décor & Accents</h3>
+                    <p>Beautiful wooden wall art, shelves, and decorative pieces to enhance your space. Add warmth and character to any room with our custom woodcraft creations and artistic designs.</p>
                     <div class="service-features">
-                        <h4>What we offer:</h4>
+                        <h4>Our Décor Services Include:</h4>
                         <ul>
-                            <li><i>✓</i> Wall art & sculptures</li>
-                            <li><i>✓</i> Floating shelves</li>
-                            <li><i>✓</i> Decorative boxes</li>
-                            <li><i>✓</i> Picture frames</li>
-                            <li><i>✓</i> Custom signs</li>
+                            <li><i class="fas fa-check"></i> Wall art & sculptures</li>
+                            <li><i class="fas fa-check"></i> Floating shelves</li>
+                            <li><i class="fas fa-check"></i> Decorative boxes</li>
+                            <li><i class="fas fa-check"></i> Picture frames</li>
+                            <li><i class="fas fa-check"></i> Custom signs</li>
+                        </ul>
+                    </div>
+                    <button class="service-details-btn">More Décor Details</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Additional Services Accordion -->
+        <section class="additional-services">
+            <h2>Specialized Woodcraft Services</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Wood Restoration Services</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Breathing new life into cherished wooden pieces with our expert restoration services. We specialize in preserving and enhancing your valuable wood items.</p>
+                        <ul>
+                            <li>Antique furniture restoration</li>
+                            <li>Wood surface repair and refinishing</li>
+                            <li>Structural repairs and reinforcement</li>
+                            <li>Vintage piece preservation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Architectural Woodwork</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Custom doors, trim, and millwork that add character to your home or business. Our architectural woodworking services enhance any space.</p>
+                        <ul>
+                            <li>Custom interior and exterior doors</li>
+                            <li>Crown molding and baseboards</li>
+                            <li>Wainscoting and paneling</li>
+                            <li>Staircases and railings</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Custom Carpentry Projects</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Specialized carpentry solutions for unique spaces and specific requirements. We tackle challenging projects with creative solutions.</p>
+                        <ul>
+                            <li>Built-in furniture and storage</li>
+                            <li>Custom window seats and benches</li>
+                            <li>Outdoor structures and furniture</li>
+                            <li>Commercial woodwork installations</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Additional Services -->
-        <section class="additional-services">
-            <h3>More Services We Offer</h3>
-            <div class="services-list">
-                <div class="service-item">
-                    <h4>Wood Restoration</h4>
-                    <p>Breathing new life into cherished wooden pieces with our expert restoration services.</p>
+        <!-- Process Section -->
+        <section class="process-section">
+            <h2>Our Woodcraft Process</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Consultation & Planning</h3>
+                    <p>We discuss your vision, requirements, and budget to understand your woodcraft needs and create a detailed project plan.</p>
                 </div>
-                <div class="service-item">
-                    <h4>Architectural Elements</h4>
-                    <p>Custom doors, trim, and millwork that add character to your home or business.</p>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Design & Visualization</h3>
+                    <p>Our designers create detailed plans and 3D renderings of your project, ensuring every detail meets your expectations.</p>
                 </div>
-                <div class="service-item">
-                    <h4>Custom Carpentry</h4>
-                    <p>Specialized carpentry solutions for unique spaces and specific requirements.</p>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Precision Craftsmanship</h3>
+                    <p>Our skilled craftsmen bring your vision to life with precision and care, using traditional and modern woodworking techniques.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Delivery & Installation</h3>
+                    <p>We deliver and install your finished piece, ensuring complete satisfaction and proper placement in your space.</p>
                 </div>
             </div>
         </section>
         
         <!-- CTA section -->
         <section class="cta-section">
-            <h3>Ready to Start Your Project?</h3>
-            <p>Contact us today for a free consultation and quote. Let's create something beautiful together.</p>
-            <a href="contact.html" class="cta-button">Get a Free Quote</a>
+            <h2>Ready to Start Your Woodcraft Project?</h2>
+            <p>Contact us today for a free consultation and quote. Let's create something beautiful together with our expert woodcraft services.</p>
+            <a href="contact.html" class="cta-button">Get a Free Woodcraft Quote</a>
         </section>
     </main>
+    
+    <!-- Service Detail Modal -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
     
     <!-- Footer section with company info and copyright -->
     <footer>
@@ -164,6 +263,7 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="enquiry.html">Enquire</a></li>
                     </ul>
                 </div>
             </div>
@@ -175,12 +275,7 @@
         </div>
     </footer>
     
-    <script>
-        // Mobile menu functionality
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    <!-- External JavaScript file -->
+    <script src="Javascript/services.js"></script>
 </body>
 </html>

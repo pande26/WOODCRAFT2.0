@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <!-- Responsive viewport setting -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Woodcraft Creations</title>
+    <title>About Woodcraft Creations - Custom Furniture & Wood Restoration Experts</title>
+    <meta name="description" content="Learn about Woodcraft Creations - expert craftsmen specializing in custom furniture, wood restoration, and architectural elements since 2015 in Cape Town.">
+    <meta name="keywords" content="woodcraft about, custom furniture makers, wood restoration experts, Cape Town carpenters, skilled craftsmen">
     <link rel="stylesheet" href="CSS/about.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header section containing navigation -->
@@ -15,7 +19,7 @@
             <nav>
                 <!-- Logo and company name -->
                 <div class="logo-container">
-                    <img src="Images/Logo.jpg" alt="Woodcraft Creations Logo" width="100" height="100">
+                    <img src="Images/Logo.jpg" alt="Woodcraft Creations Logo - Custom Wood Furniture and Restoration Experts" width="100" height="100">
                     <h1>WOODCRAFT CREATIONS</h1>
                 </div>
                 <!-- Navigation menu -->
@@ -25,6 +29,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="enquiry.html">Enquire</a></li>
                 </ul>
                 <!-- Mobile menu button -->
                 <div class="mobile-menu-btn">
@@ -40,50 +45,65 @@
     <main class="container">
         <!-- Company introduction -->
         <section class="about-header">
-            <h2>About WoodCraft Creations</h2>
+            <h1>About WoodCraft Creations</h1>
             <p>Founded in 2015, WoodCraft Creations is a locally owned carpentry business specializing in custom furniture, cabinetry, and wooden décor. We take pride in delivering high-quality craftsmanship and personalized designs to both residential and commercial clients.</p>
         </section>
         
         <!-- Mission and Vision -->
         <section class="mission-vision">
             <div class="card">
-                <h3>Our Mission</h3>
+                <div class="card-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h2>Our Mission</h2>
                 <p>To transform raw materials into functional art by creating timeless, high-quality wooden pieces that enhance our clients' living and working spaces.</p>
             </div>
             <div class="card">
-                <h3>Our Vision</h3>
+                <div class="card-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h2>Our Vision</h2>
                 <p>To become the premier carpentry service in the region, recognised for excellence in sustainable craftsmanship, innovative design, and unparalleled customer satisfaction.</p>
             </div>
         </section>
         
         <!-- Team Section -->
         <section class="team-section">
-            <h3>Meet Our Team</h3>
+            <h2>Meet Our Expert Team</h2>
             <div class="team-grid">
-                <div class="team-member">
+                <div class="team-member" data-member="pandelani">
                     <div class="member-img">
-                        <img src="Images/Pande.jpg" alt="Pandelani Munenyiwa - Master Craftsman & Founder">
+                        <img src="Images/Pandelani.jpg" alt="Pandelani Munenyiwa - Master Craftsman & Founder of Woodcraft Creations">
+                        <div class="member-overlay">
+                            <span>View Profile</span>
+                        </div>
                     </div>
                     <div class="member-info">
-                        <h4>Pandelani Munenyiwa</h4>
+                        <h3>Pandelani Munenyiwa</h3>
                         <p>Master Craftsman & Founder</p>
                     </div>
                 </div>
-                <div class="team-member">
+                <div class="team-member" data-member="angel">
                     <div class="member-img">
-                        <img src="Images/Angel.jpg" alt="Angel Mohlahlo - Design Specialist">
+                        <img src="Images/Angel.jpg" alt="Angel Mohlahlo - Design Specialist at Woodcraft Creations">
+                        <div class="member-overlay">
+                            <span>View Profile</span>
+                        </div>
                     </div>
                     <div class="member-info">
-                        <h4>Angel Mohlahlo</h4>
+                        <h3>Angel Mohlahlo</h3>
                         <p>Design Specialist</p>
                     </div>
                 </div>
-                <div class="team-member">
+                <div class="team-member" data-member="humbulani">
                     <div class="member-img">
-                        <img src="Images/Kamogelo.jpg" alt="Kamogelo Rikhotso - Project Manager">
+                        <img src="Images/Humbulani.jpg" alt="Humbulani Munenyiwa - Project Manager at Woodcraft Creations">
+                        <div class="member-overlay">
+                            <span>View Profile</span>
+                        </div>
                     </div>
                     <div class="member-info">
-                        <h4>Kamogelo Rikhotso</h4>
+                        <h3>Humbulani Munenyiwa</h3>
                         <p>Project Manager</p>
                     </div>
                 </div>
@@ -92,31 +112,84 @@
         
         <!-- Values Section -->
         <section class="values-section">
-            <h3>Our Values</h3>
+            <h2>Our Woodworking Values</h2>
             <div class="values-grid">
                 <div class="value-item">
-                    <i>🔨</i>
-                    <h4>Craftsmanship</h4>
+                    <div class="value-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Craftsmanship</h3>
                     <p>Attention to detail in every piece we create</p>
                 </div>
                 <div class="value-item">
-                    <i>🌱</i>
-                    <h4>Sustainability</h4>
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainability</h3>
                     <p>Using ethically sourced, eco-friendly materials</p>
                 </div>
                 <div class="value-item">
-                    <i>💎</i>
-                    <h4>Quality</h4>
+                    <div class="value-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Quality</h3>
                     <p>Never compromising on materials or workmanship</p>
                 </div>
                 <div class="value-item">
-                    <i>🤝</i>
-                    <h4>Collaboration</h4>
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Collaboration</h3>
                     <p>Working closely with clients to realize their vision</p>
                 </div>
             </div>
         </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <h2>Our Woodworking Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h3>Founded Woodcraft Creations</h3>
+                        <p>Started with a small workshop and big dreams of creating beautiful wooden pieces.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2017</div>
+                    <div class="timeline-content">
+                        <h3>Expanded Team</h3>
+                        <p>Welcomed our first team members to handle growing demand for custom furniture.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h3>New Workshop</h3>
+                        <p>Moved to a larger facility to accommodate more projects and equipment.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>Sustainability Focus</h3>
+                        <p>Committed to using only ethically sourced, sustainable wood materials.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    <!-- Team Member Modals -->
+    <div class="modal" id="memberModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
     
     <!-- Footer section with company info and copyright -->
     <footer>
@@ -156,12 +229,7 @@
         </div>
     </footer>
     
-    <script>
-        // Mobile menu functionality
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    <!-- External JavaScript file -->
+    <script src="Javascript/about.js"></script>
 </body>
 </html>

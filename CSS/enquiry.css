@@ -1,4 +1,4 @@
-/* contact.css - Complete CSS for Woodcraft Creations Contact Page */
+/* enquiry.css - Styles for the enquiry page */
 
 /* Base styles and reset */
 * {
@@ -122,12 +122,12 @@ main {
     padding: 60px 0;
 }
 
-.contact-header {
+.enquiry-header {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.contact-header h1 {
+.enquiry-header h1 {
     font-size: 2.8rem;
     color: #4E342E;
     margin-bottom: 20px;
@@ -135,7 +135,7 @@ main {
     display: inline-block;
 }
 
-.contact-header h1::after {
+.enquiry-header h1::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -146,15 +146,15 @@ main {
     background-color: #8D6E63;
 }
 
-.contact-header p {
+.enquiry-header p {
     max-width: 800px;
     margin: 30px auto 0;
     font-size: 1.2rem;
     line-height: 1.8;
 }
 
-/* Contact content layout */
-.contact-content {
+/* Enquiry content layout */
+.enquiry-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -181,7 +181,7 @@ main {
 }
 
 /* Form styles */
-.contact-form {
+.enquiry-form {
     display: flex;
     flex-direction: column;
 }
@@ -221,107 +221,6 @@ main {
 .form-group textarea {
     min-height: 120px;
     resize: vertical;
-}
-
-/* Radio button and checkbox styles */
-.radio-group, .checkbox-group {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 8px;
-}
-
-.radio-option, .checkbox-option {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    position: relative;
-    padding-left: 35px;
-    font-weight: normal;
-}
-
-.radio-option input, .checkbox-option input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.radio-checkmark, .checkbox-checkmark {
-    position: absolute;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #fff;
-    border: 2px solid #D7CCC8;
-    transition: all 0.3s ease;
-}
-
-.radio-checkmark {
-    border-radius: 50%;
-}
-
-.checkbox-checkmark {
-    border-radius: 3px;
-}
-
-.radio-option:hover input ~ .radio-checkmark,
-.checkbox-option:hover input ~ .checkbox-checkmark {
-    border-color: #8D6E63;
-}
-
-.radio-option input:checked ~ .radio-checkmark,
-.checkbox-option input:checked ~ .checkbox-checkmark {
-    background-color: #8D6E63;
-    border-color: #8D6E63;
-}
-
-.radio-checkmark:after, .checkbox-checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.radio-option input:checked ~ .radio-checkmark:after {
-    display: block;
-}
-
-.radio-option .radio-checkmark:after {
-    top: 4px;
-    left: 4px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: white;
-}
-
-.checkbox-option input:checked ~ .checkbox-checkmark:after {
-    display: block;
-}
-
-.checkbox-option .checkbox-checkmark:after {
-    left: 6px;
-    top: 2px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-}
-
-/* Character count styling */
-.char-count {
-    text-align: right;
-    font-size: 0.8rem;
-    color: #8D6E63;
-    margin-top: 5px;
-}
-
-.char-count.warning {
-    color: #FF9800;
-}
-
-.char-count.error {
-    color: #F44336;
 }
 
 /* Error message styling */
@@ -376,11 +275,6 @@ main {
     display: none;
 }
 
-.success-message h3 {
-    margin-bottom: 10px;
-    color: #2E7D32;
-}
-
 /* Info container styles */
 .info-container {
     display: flex;
@@ -421,30 +315,32 @@ main {
     margin-bottom: 8px;
 }
 
-/* Map container */
-.map-container {
-    height: 200px;
-    margin-top: 15px;
-    border-radius: 5px;
-    overflow: hidden;
+/* Enquiry types */
+.enquiry-types {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-/* Interactive Map Styles */
-#interactiveMap {
-    height: 200px;
-    width: 100%;
-    border-radius: 5px;
-    z-index: 1;
+.enquiry-type h4 {
+    color: #5D4037;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
 }
 
-/* Contact details */
-.contact-detail {
+.enquiry-type p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Response info */
+.response-detail {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.contact-detail i {
+.response-detail i {
     color: #8D6E63;
     margin-right: 15px;
     margin-top: 3px;
@@ -452,30 +348,17 @@ main {
     text-align: center;
 }
 
-.contact-detail div {
+.response-detail div {
     flex: 1;
 }
 
-/* Social links */
-.social-links p {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.social-links i {
-    color: #8D6E63;
-    margin-right: 10px;
-    width: 20px;
-}
-
-/* Additional Contact Methods */
-.additional-contact {
+/* Pricing Information Section */
+.pricing-info {
     margin: 80px 0;
     text-align: center;
 }
 
-.additional-contact h2 {
+.pricing-info h2 {
     font-size: 2.2rem;
     color: #4E342E;
     margin-bottom: 40px;
@@ -483,7 +366,7 @@ main {
     display: inline-block;
 }
 
-.additional-contact h2::after {
+.pricing-info h2::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -494,14 +377,14 @@ main {
     background-color: #8D6E63;
 }
 
-.contact-methods {
+.pricing-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 50px;
 }
 
-.contact-method {
+.pricing-card {
     background: rgba(255, 250, 245, 0.8);
     padding: 30px 20px;
     border-radius: 10px;
@@ -510,172 +393,50 @@ main {
     text-align: center;
 }
 
-.contact-method:hover {
+.pricing-card:hover {
     transform: translateY(-5px);
 }
 
-.contact-method i {
-    font-size: 2.5rem;
-    color: #8D6E63;
-    margin-bottom: 20px;
-}
-
-.contact-method h3 {
+.pricing-card h3 {
     color: #5D4037;
     margin-bottom: 15px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
-.contact-method p {
+.price-range {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #8D6E63;
+    margin-bottom: 15px;
+}
+
+.pricing-card p {
     color: #3E2723;
-    line-height: 1.6;
     margin-bottom: 20px;
-}
-
-/* Method buttons in contact methods */
-.method-btn {
-    background-color: transparent;
-    color: #8D6E63;
-    border: 2px solid #8D6E63;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 15px;
-    width: 100%;
-}
-
-.method-btn:hover {
-    background-color: #8D6E63;
-    color: white;
-}
-
-/* Modal styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    animation: fadeIn 0.3s;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.modal-content {
-    background-color: #F9F5F0;
-    margin: 5% auto;
-    padding: 30px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    animation: slideIn 0.3s;
-}
-
-@keyframes slideIn {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-.close-modal {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #5D4037;
-}
-
-.close-modal:hover {
-    color: #8D6E63;
-}
-
-.modal-content h2 {
-    color: #5D4037;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.email-preview {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px 0;
-    border: 1px solid #D7CCC8;
-}
-
-.email-preview p {
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
-.email-body {
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid #D7CCC8;
-    white-space: pre-line;
     line-height: 1.6;
-    max-height: 300px;
-    overflow-y: auto;
 }
 
-.modal-actions {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
-    margin-top: 20px;
+.pricing-card ul {
+    list-style: none;
+    text-align: left;
 }
 
-.cancel-btn {
-    background-color: #BCAAA4;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.pricing-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #D7CCC8;
 }
 
-.cancel-btn:hover {
-    background-color: #A1887F;
+.pricing-card li:last-child {
+    border-bottom: none;
 }
 
-.cancel-btn:disabled {
-    background-color: #D7CCC8;
-    cursor: not-allowed;
-}
-
-/* Loading spinner */
-.loading-spinner {
-    display: none;
-    text-align: center;
-    margin: 20px 0;
-}
-
-.spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #8D6E63;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-    margin: 0 auto;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.pricing-note {
+    margin-top: 30px;
+    font-style: italic;
+    color: #5D4037;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Footer styles */
@@ -784,11 +545,11 @@ footer {
         transform: rotate(-45deg) translate(7px, -6px);
     }
     
-    .contact-content {
+    .enquiry-content {
         grid-template-columns: 1fr;
     }
     
-    .contact-header h1 {
+    .enquiry-header h1 {
         font-size: 2.2rem;
     }
     
@@ -796,21 +557,8 @@ footer {
         padding: 30px 20px;
     }
     
-    .contact-methods {
+    .pricing-cards {
         grid-template-columns: 1fr;
-    }
-    
-    .modal-content {
-        margin: 10% auto;
-        padding: 20px;
-    }
-    
-    .modal-actions {
-        flex-direction: column;
-    }
-    
-    .modal-actions button {
-        width: 100%;
     }
 }
 
@@ -825,7 +573,7 @@ footer {
         margin-bottom: 10px;
     }
     
-    .contact-header h1 {
+    .enquiry-header h1 {
         font-size: 1.8rem;
     }
     
@@ -833,91 +581,7 @@ footer {
         padding: 20px;
     }
     
-    .additional-contact h2 {
+    .pricing-info h2 {
         font-size: 1.8rem;
-    }
-    
-    .form-container {
-        padding: 20px 15px;
-    }
-    
-    .radio-group, .checkbox-group {
-        gap: 8px;
-    }
-    
-    .radio-option, .checkbox-option {
-        padding-left: 30px;
-        font-size: 0.9rem;
-    }
-    
-    .radio-checkmark, .checkbox-checkmark {
-        height: 18px;
-        width: 18px;
-    }
-    
-    .radio-option .radio-checkmark:after {
-        top: 3px;
-        left: 3px;
-        width: 6px;
-        height: 6px;
-    }
-    
-    .checkbox-option .checkbox-checkmark:after {
-        left: 5px;
-        top: 1px;
-        width: 4px;
-        height: 8px;
-    }
-}
-
-/* Print styles */
-@media print {
-    header, footer, .additional-contact, .method-btn {
-        display: none;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-container {
-        box-shadow: none;
-        border: 1px solid #D7CCC8;
-    }
-    
-    body {
-        background-color: white;
-        color: black;
-    }
-}
-
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-    .contact-form input,
-    .contact-form select,
-    .contact-form textarea {
-        border: 2px solid #000;
-    }
-    
-    .submit-btn {
-        border: 2px solid #000;
-    }
-    
-    .error-message {
-        font-weight: bold;
-    }
-}
-
-/* Reduced motion support */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-    
-    .submit-btn:hover,
-    .contact-method:hover {
-        transform: none;
     }
 }

@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Woodcraft Creations</title>
+    <title>Custom Woodcraft Furniture & Restoration | Woodcraft Creations</title>
+    <meta name="description" content="Woodcraft Creations offers custom furniture, wood restoration, and architectural elements. Handcrafted woodwork with exceptional craftsmanship in Cape Town.">
+    <meta name="keywords" content="custom wood furniture, wood restoration, custom cabinets, woodcraft, Cape Town woodworking, handcrafted furniture">
     <link rel="stylesheet" href="CSS/index.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header section containing navigation -->
@@ -13,7 +17,7 @@
             <nav>
                 <!-- Logo and Company name -->
                 <div class="logo-container">
-                    <img src="Images/Logo.jpg" alt="Woodcraft Creations Logo" width="100" height="100">
+                    <img src="Images/Logo.jpg" alt="Woodcraft Creations Logo - Custom Wood Furniture and Restoration" width="100" height="100">
                     <h1>WOODCRAFT CREATIONS</h1>
                 </div>
 
@@ -24,6 +28,7 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="enquiry.html">Enquire</a></li>
                 </ul>
                 
                 <!-- Mobile menu button -->
@@ -50,31 +55,91 @@
         <section class="features">
             <div class="container">
                 <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
                     <h3>Custom Furniture</h3>
                     <p>Handcrafted pieces tailored to your unique style and space requirements. Each piece is made with attention to detail and quality materials.</p>
                 </div>
                 <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
                     <h3>Wood Restoration</h3>
                     <p>Breathing new life into cherished wooden heirlooms. Our restoration services preserve the history while enhancing durability.</p>
                 </div>
                 <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
                     <h3>Architectural Elements</h3>
                     <p>Custom doors, trim, and millwork that add character and warmth to your home. Precision craftsmanship for lasting beauty.</p>
                 </div>
             </div>
         </section>
         
-        <!-- Testimonials section -->
+        <!-- Testimonials section with carousel -->
         <section class="testimonials">
             <div class="container">
                 <h2>What Our Clients Say</h2>
-                <div class="testimonial">
-                    <p>"Woodcraft Creations transformed my dining room with a beautiful custom table. The craftsmanship is exceptional!"</p>
-                    <span>- Lufuno Ramasuvha</span>
+                <div class="testimonial-carousel">
+                    <div class="testimonial-slides">
+                        <div class="testimonial-slide active">
+                            <p>"Woodcraft Creations transformed my dining room with a beautiful custom table. The craftsmanship is exceptional!"</p>
+                            <span>- Lufuno Ramasuvha</span>
+                        </div>
+                        <div class="testimonial-slide">
+                            <p>"They restored my grandfather's antique desk perfectly. It looks even better than I remember from my childhood."</p>
+                            <span>- Xichavo Maluleke</span>
+                        </div>
+                        <div class="testimonial-slide">
+                            <p>"The custom cabinets they built for our kitchen are stunning. The attention to detail is remarkable!"</p>
+                            <span>- John Peterson</span>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                        </div>
+                        <button class="carousel-btn next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <p>"They restored my grandfather's antique desk perfectly. It looks even better than I remember from my childhood."</p>
-                    <span>- Xichavo Maluleke</span>
+            </div>
+        </section>
+
+        <!-- Recent Projects Gallery -->
+        <section class="projects">
+            <div class="container">
+                <h2>Recent Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <img src="Images/Solid oak.jpeg" alt="Custom Dining Table - Solid oak with hand-carved details" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Custom Dining Table</h3>
+                            <p>Solid oak with hand-carved details</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="Images/Restored_desk.jpeg" alt="Restored Antique Desk - 1920s mahogany desk restoration" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Restored Antique Desk</h3>
+                            <p>1920s mahogany desk restoration</p>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <img src="Images/cabinets.jpeg" alt="Custom Kitchen Cabinets - Maple cabinets with custom finish" class="project-image">
+                        <div class="project-overlay">
+                            <h3>Custom Kitchen Cabinets</h3>
+                            <p>Maple cabinets with custom finish</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -116,12 +181,7 @@
         </div>      
     </footer>
     
-    <script>
-        // Mobile menu functionality
-        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    <!-- External JavaScript file -->
+    <script src="Javascript/index.js"></script>
 </body>    
 </html>
